@@ -35,7 +35,7 @@
 }
 
 .content {
-    width: 70%;
+    width: 80%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@
 }
 .input{
    position: fixed;
-   top: 10%;
+   top: 15%;
 }
 .input input {
     width: 300px;
@@ -244,5 +244,6 @@
     }
     .additional-content{
         flex-direction: column;
+        gap: 50px;
     }
 }
