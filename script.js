@@ -9,7 +9,8 @@ const countryStatus = async () => {
 
             // Convert Celsius to Fahrenheit
             const tempInCelsius = WeatherDetails.main.temp;
-            const tempInFahrenheit = (tempInCelsius * 1.8) + 32;
+            const tempInFahrenheit = Math.round((tempInCelsius * 1.8) + 32);
+            
 
             result1.innerHTML = ` 
                 <div class="date-place">
