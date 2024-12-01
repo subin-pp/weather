@@ -107,15 +107,10 @@
 }
 
 .degree {
-    margin-left: -50px;
+    font-size: 80px;
+    margin-left: -70px;
     font-weight: bold;
     color: white; /* Adjust color to your preference */
-}
-#degree-f{
-    font-size: 80px;
-}
-#degree-value{
-    font-size: 80px;
 }
 
 .date-place h4
@@ -189,9 +184,7 @@
         width: 90%; /* Increase width of content on smaller screens */
     }
 
-    #degree-value {
-        font-size: 4rem; /* Adjust degree font size for mobile */
-    }
+   
 
     .content-main {
         height: auto; /* Allow height to adjust based on content */
@@ -221,10 +214,7 @@
         width: 250px; /* Smaller input field on very small screens */
     }
 
-    #degree-value {
-        font-size: 56px; /* Further reduce degree font size on extra small screens */
-    }
-
+   
  
     .content-main {
         flex-direction: column;
