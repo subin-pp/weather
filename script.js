@@ -11,13 +11,12 @@ const countryStatus = async () => {
             const tempInCelsius = WeatherDetails.main.temp;
             const tempInFahrenheit = Math.round((tempInCelsius * 1.8) + 32);
             
-
             result1.innerHTML = ` 
                 <div class="date-place">
                     <h4 class="place"><i class="fa-solid fa-location-dot"></i> ${WeatherDetails.name}, <span>${WeatherDetails.sys.country}</span></h4>
                 </div>
                 <h1 class="degree">
-                    <span id="degree-value">${tempInFahrenheit.toFixed(2)}</span>
+                    <span id="degree-value">${tempInFahrenheit.toFixed(0)}</span> <!-- Changed to .toFixed(0) -->
                     <span id="degree-f">°F</span>
                 </h1>
 
@@ -42,13 +41,10 @@ const countryStatus = async () => {
     }
 };
 
-
-
 userinput.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
         countryStatus();
 
-        
         setTimeout(() => {
             result2.style.display = 'flex'; 
         }, 100);
