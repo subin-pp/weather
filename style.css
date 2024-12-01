@@ -111,8 +111,8 @@
     font-weight: bold;
     color: white; /* Adjust color to your preference */
 }
-.degree-c{
-    font-size: 30px;
+#degree-f{
+    font-size: 80px;
 }
 #degree-value{
     font-size: 80px;
@@ -134,7 +134,6 @@
 #result2 {
     display: none;
     padding: 25px;
-    margin: 20px;
     border: 2px solid rgba(255, 255, 255, .2);
     width: 80%;
     border-radius: 20px;
@@ -215,7 +214,7 @@
         display: none; /* Keep this untouched */
     }
     .input{
-        top: 5%;
+        top: 2%;
     }
 
     .input input {
@@ -226,12 +225,7 @@
         font-size: 4.5rem; /* Further reduce degree font size on extra small screens */
     }
 
-    #degree-c {
-        position: fixed;
-        top: 26%;
-        font-size: 30px; /* Smaller superscript for very small screens */
-    }
-
+ 
     .content-main {
         flex-direction: column;
         justify-content: center;
@@ -244,15 +238,17 @@
         margin-top: 50px;
         text-align: center; /* Center-align text on small screens */
     }
+    .date-place h4{
+        font-size: 20px;
+    }
 
     .degree {
-        margin-top: 10px;
         margin-left: 0; /* Remove fixed left margin */
         text-align: center; /* Center-align degree value */
     }
 
     .mood {
-        font-size: 16px; /* Slightly smaller font size for better fit */
+        font-size: 20px; /* Slightly smaller font size for better fit */
         text-align: center;
     }
     .additional-content{

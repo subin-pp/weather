@@ -17,8 +17,9 @@ const countryStatus = async () => {
                 </div>
                 <h1 class="degree">
                     <span id="degree-value">${tempInFahrenheit.toFixed(2)}</span>
-                    < id="degree-f">°F</
+                    <span id="degree-f">°F</span>
                 </h1>
+
                 <h4 class="mood"><i class="fa-solid fa-cloud"></i>${WeatherDetails.weather[0].main}</h4>`;
 
             result2.innerHTML = ` 
