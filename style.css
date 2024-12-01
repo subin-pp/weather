@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+.carousel-image {
+    height: 100vh; /* Set height of carousel images to full screen */
+    object-fit: cover; /* Ensure images cover the full width and height */
+}
+
+.main-container {
+    position: absolute; /* Position it over the carousel */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Ensure content is above the carousel */
+}
+
+/* Add grey overlay over the background image */
+.main-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 0; /* Overlay behind the content */
+}
+
+.content {
+    width: 70%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.input{
+   position: fixed;
+   top: 10%;
+}
+.input input {
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 0 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    background: transparent;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.input input:focus {
+    box-shadow: 0 0 15px white;
+    outline: none;
+    transform: scale(1.05);
+}
+
+.input input::placeholder {
+    color: white;
+    padding: 10px;
+}
+.btn button {
+    margin-top: -5px;
+    width: 40px; /* Set width */
+    height: 40px; /* Set height */
+    border-radius: 50%; /* Make it circular */
+    border: none; /* Remove default border */
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    background: transparent;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .2);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;    color: white; /* Text color */
+    font-size: 16px; /* Adjust text size */
+    cursor: pointer; /* Change cursor to pointer */
+    display: flex; /* Center text inside the button */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  .btn button:hover {
+    box-shadow: 0 0 15px white;
+    outline: none;
+    transform: scale(1.05);
+  }
+  .btn button .fa-check {
+    margin-left: 10px;
+
+  }
+
+.content-main {
+    display: flex;
+    align-items: center; /* Center items horizontally */
+    justify-content: space-between; /* Center items vertically */
+    gap: 120px; /* Add spacing between items */
+}
+
+.degree {
+    margin-left: -50px;
+    font-weight: bold;
+    color: white; /* Adjust color to your preference */
+}
+.degree-c{
+    font-size: 25px;
+}
+#degree-value{
+    font-size: 60px;
+}
+
+.date-place h4
+{
+    font-size: 1.2rem; /* Adjust other text font size */
+    margin: 0;
+    color:white;
+}
+.mood{
+    font-size: 1.2rem; /* Adjust other text font size */
+    margin: 0;
+    color:white;
+}
+
+
+#result2 {
+    display: none;
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    width: 75%;
+    border-radius: 20px;
+    height: auto;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+.additional-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.add-items {
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+.add-items h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.add-items p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.add-items:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #ddd;
+}
+.fa-solid{
+    margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .content {
+        width: 90%; /* Increase width of content on smaller screens */
+    }
+
+    #degree-value {
+        font-size: 4rem; /* Adjust degree font size for mobile */
+    }
+
+    .content-main {
+        height: auto; /* Allow height to adjust based on content */
+       
+        gap: 20px; /* Reduce gap for better spacing on smaller screens */
+    }
+
+    .date-place, .mood {
+        font-size: 18px;
+        text-align: center; /* Center-align text for mobile */
+    }
+
+    .input input {
+        width: 90%; /* Make input field width dynamic */
+    }
+}
+
+@media (max-width: 576px) {
+    .add-items:not(:last-child)::after {
+        display: none; /* Keep this untouched */
+    }
+    .input{
+        top: 5%;
+    }
+
+    .input input {
+        width: 250px; /* Smaller input field on very small screens */
+    }
+
+    #degree-value {
+        font-size: 4.5rem; /* Further reduce degree font size on extra small screens */
+    }
+
+    #degree-c {
+        position: fixed;
+        top: 26%;
+        font-size: 30px; /* Smaller superscript for very small screens */
+    }
+
+    .content-main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px; /* Add spacing for better mobile layout */
+        gap: 5px; /* Reduce gap for tighter layout */
+    }
+
+    .date-place {
+        margin-top: 50px;
+        text-align: center; /* Center-align text on small screens */
+    }
+
+    .degree {
+        margin-top: 10px;
+        margin-left: 0; /* Remove fixed left margin */
+        text-align: center; /* Center-align degree value */
+    }
+
+    .mood {
+        font-size: 16px; /* Slightly smaller font size for better fit */
+        text-align: center;
+    }
+    .additional-content{
+        flex-direction: column;
+    }
+}
