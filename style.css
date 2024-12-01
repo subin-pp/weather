@@ -48,7 +48,7 @@
    top: 10%;
 }
 .input input {
-    width: 250px;
+    width: 300px;
     height: 40px;
     border-radius: 20px;
     padding: 0 10px;
@@ -103,7 +103,7 @@
     display: flex;
     align-items: center; /* Center items horizontally */
     justify-content: space-between; /* Center items vertically */
-    gap: 120px; /* Add spacing between items */
+    gap: 150px; /* Add spacing between items */
 }
 
 .degree {
@@ -112,20 +112,20 @@
     color: white; /* Adjust color to your preference */
 }
 .degree-c{
-    font-size: 25px;
+    font-size: 30px;
 }
 #degree-value{
-    font-size: 60px;
+    font-size: 80px;
 }
 
 .date-place h4
 {
-    font-size: 1.2rem; /* Adjust other text font size */
+    font-size: 1.9rem; /* Adjust other text font size */
     margin: 0;
     color:white;
 }
 .mood{
-    font-size: 1.2rem; /* Adjust other text font size */
+    font-size: 1.9rem; /* Adjust other text font size */
     margin: 0;
     color:white;
 }
@@ -133,10 +133,10 @@
 
 #result2 {
     display: none;
-    padding: 20px;
+    padding: 25px;
     margin: 20px;
     border: 2px solid rgba(255, 255, 255, .2);
-    width: 75%;
+    width: 80%;
     border-radius: 20px;
     height: auto;
     justify-content: center;
@@ -161,13 +161,13 @@
 }
 
 .add-items h1 {
-    font-size: 20px;
+    font-size: 28px;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
 .add-items p {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
 }
 
