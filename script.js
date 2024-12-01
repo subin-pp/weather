@@ -16,7 +16,7 @@ const countryStatus = async () => {
                     <h4 class="place"><i class="fa-solid fa-location-dot"></i> ${WeatherDetails.name}, <span>${WeatherDetails.sys.country}</span></h4>
                 </div>
                 <h1 class="degree">
-                    <span id="degree-value">${tempInFahrenheit.toFixed(0)}</span><span id="degree-f">°F</span>
+                    <span id="degree-value">${tempInFahrenheit.toFixed(0)}°F</span>
                 </h1>
 
                 <h4 class="mood"><i class="fa-solid fa-cloud"></i>${WeatherDetails.weather[0].main}</h4>`;

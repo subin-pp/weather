@@ -233,6 +233,7 @@
     }
 
     .degree {
+        font-size: 50px;
         margin-left: 0; /* Remove fixed left margin */
         text-align: center; /* Center-align degree value */
     }
